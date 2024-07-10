@@ -36,7 +36,7 @@
 
 /*=============== IMAGE TEMPLATE ===============*/
 .background-img-wrapper {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: -2rem;
   left: 50%;
@@ -70,7 +70,7 @@ body {
   margin: 2rem auto;
   padding: 1.5rem;
   border-radius: 1rem;
-  /* opacity: 0.6; */
+  opacity: 0.6;
 }
 
 h1 {
@@ -86,13 +86,13 @@ h1 {
 /*=============== MEDIA QUERIES ===============*/
 @media screen and (min-width: 768px) {
   .background-img-wrapper {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: -8rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 736px;
-    height: 900px;
+    width: 732px;
+    height: 901px;
     margin: 0 auto;
     z-index: -1;
   }
