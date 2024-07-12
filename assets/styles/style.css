@@ -38,7 +38,7 @@
 .background-img-wrapper {
   /* display: none; */
   position: absolute;
-  top: -2rem;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 375px;
@@ -66,11 +66,12 @@ body {
 
 .container {
   background: var(--white);
-  max-width: 345px;
-  margin: 2rem auto;
-  padding: 1.5rem;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 1rem;
   border-radius: 1rem;
   opacity: 0.6;
+  border: 1px solid red;
 }
 
 h1 {
@@ -85,6 +86,22 @@ h1 {
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+/*=============== POST ===============*/
+.post {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.post img {
+  max-width: 2.5rem;
+}
+
+.post_data {
+  display: flex;
+  flex-direction: column;
 }
 
 /*=============== MEDIA QUERIES ===============*/
