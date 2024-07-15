@@ -85,20 +85,21 @@ h1 {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-top: 0.4rem;
 }
 
-.notifications{
+.notifications {
   font-size: 1.3rem;
   font-weight: 800;
 }
 
-.notifications span{
-  display:inline-flex;
-  margin-left: .5rem;
-  padding:0.025rem .5rem;
+.notifications span {
+  display: inline-flex;
+  margin-left: 0.5rem;
+  padding: 0.025rem 0.5rem;
   background-color: var(--primary-blue);
-  color:var(--white);
-  border-radius: .35rem;
+  color: var(--white);
+  border-radius: 0.35rem;
 }
 
 /*=============== POST ===============*/
