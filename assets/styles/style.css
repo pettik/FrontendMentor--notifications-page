@@ -1,161 +1,195 @@
 /*  Plus Jakarta Sans */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+
 .plus-jakarta-sans-normal {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
+
 .plus-jakarta-sans-bold {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-  --primary-red: hsl(1, 90%, 64%);
-  --primary-blue: hsl(219, 85%, 26%);
-  --white: hsl(0, 0%, 100%);
-  --very-light-grayish-blue: hsl(210, 60%, 98%);
-  --light-grayish-blue-1: hsl(211, 68%, 94%);
-  --light-grayish-blue-2: hsl(205, 33%, 90%);
-  --grayish-blue: hsl(219, 14%, 63%);
-  --dark-grayish-blue: hsl(219, 12%, 42%);
-  --very-dark-blue: hsl(224, 21%, 14%);
+	--primary-red: hsl(1, 90%, 64%);
+	--primary-blue: hsl(219, 85%, 26%);
+	--white: hsl(0, 0%, 100%);
+	--very-light-grayish-blue: hsl(210, 60%, 98%);
+	--light-grayish-blue-1: hsl(211, 68%, 94%);
+	--light-grayish-blue-2: hsl(205, 33%, 90%);
+	--grayish-blue: hsl(219, 14%, 63%);
+	--dark-grayish-blue: hsl(219, 12%, 42%);
+	--very-dark-blue: hsl(224, 21%, 14%);
 }
 
 /*=============== IMAGE TEMPLATE ===============*/
 .background-img-wrapper {
-  /* display: none; */
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 375px;
-  height: 1138px;
-  margin: 0 auto;
-  z-index: -1;
+	/* display: none; */
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 375px;
+	height: 1138px;
+	margin: 0 auto;
+	z-index: -1;
 }
 
 .background-img {
-  width: 100%;
-  height: 100%;
-  background: url('../../design/mobile-design.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
+	width: 100%;
+	height: 100%;
+	background: url('../../design/mobile-design.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 /*=============== BASE ===============*/
 body {
-  position: relative;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: var(--very-light-grayish-blue);
+	position: relative;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: var(--very-light-grayish-blue);
 }
 
 .container {
-  background: var(--white);
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 1rem;
-  opacity: 0.6;
-  border: 1px solid red;
+	background: var(--white);
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 1rem;
+	opacity: 0.6;
+	border: 1px solid red;
 }
 
 h1 {
-  letter-spacing: -0.5px;
-  margin-bottom: 1.9rem;
+	letter-spacing: -0.5px;
+	margin-bottom: 1.9rem;
 }
 
 .hidden {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 .header {
-  font-size: 0.88rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0.4rem;
-  margin-bottom: 1.5rem;
+	font-size: 0.88rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0.4rem;
+	margin-bottom: 1.3rem;
 }
 
 .notifications {
-  font-size: 1.3rem;
-  font-weight: 800;
-  letter-spacing: -0.3px;
+	font-size: 1.3rem;
+	font-weight: 800;
+	letter-spacing: -0.3px;
 }
 
 .notifications span {
-  display: inline-flex;
-  margin-left: 0.45rem;
-  padding: 0.035rem 0.55rem;
-  background-color: var(--primary-blue);
-  color: var(--white);
-  border-radius: 0.35rem;
+	display: inline-flex;
+	margin-left: 0.45rem;
+	padding: 0.035rem 0.55rem;
+	background-color: var(--primary-blue);
+	color: var(--white);
+	border-radius: 0.35rem;
 }
 
 .posts_container {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 /*=============== POST ===============*/
 .post {
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
+	display: flex;
+	align-items: flex-start;
+	column-gap: 0.5rem;
 }
 
 .post img {
-  max-width: 2.5rem;
+	max-width: 2.5rem;
 }
 
 .post_data {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.post__message {
+	font-size: .92rem;
+	color: var(--light-grayish-blue-2);
+}
+
+.post__message span {
+	font-weight: bold;
+}
+
+.post__message span:not(.name) {
+	color: var(--light-grayish-blue-2);
+}
+
+.post__message span.name {
+	color: var(--dark-grayish-blue);
+}
+
+
+.dot {
+	width: 8px;
+	height: 8px;
+	background-color: var(--primary-red);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.time {
+	font-size: .9rem;
+	color: var(--light-grayish-blue-1);
 }
 
 .attribution {
-  display: none;
+	display: none;
 }
 
 /*=============== MEDIA QUERIES ===============*/
 @media screen and (min-width: 768px) {
-  .background-img-wrapper {
-    /* display: none; */
-    position: absolute;
-    top: -8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 731px;
-    height: 901px;
-    margin: 0 auto;
-    z-index: -1;
-  }
+	.background-img-wrapper {
+		/* display: none; */
+		position: absolute;
+		top: -8rem;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 731px;
+		height: 901px;
+		margin: 0 auto;
+		z-index: -1;
+	}
 
-  .background-img {
-    width: 100%;
-    height: 100%;
-    background: url('../../design/desktop-design2.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+	.background-img {
+		width: 100%;
+		height: 100%;
+		background: url('../../design/desktop-design2.jpg');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 
-  .container {
-    margin-top: 8rem;
-    max-width: 736px;
-    padding: 2.5rem;
-    border-radius: 1rem;
-  }
+	.container {
+		margin-top: 8rem;
+		max-width: 736px;
+		padding: 2.5rem;
+		border-radius: 1rem;
+	}
 }
