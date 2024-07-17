@@ -1,159 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <!--=============== CSS  ===============-->
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <!--=============== JS  ===============-->
-    <script src="./assets/js/script.js" defer></script>
-
-    <!--=============== TITLE ===============-->
-    <title>Frontend Mentor | Notifications page</title>
-  </head>
-  <body>
-    <div class="background-img-wrapper">
-      <div class="background-img"></div>
-    </div>
-    <div class="container">
-      <div class="header">
-        <p class="notifications">Notifications<span>3</span></p>
-
-        <p>Mark all as read</p>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+      <!--=============== FAVICON ===============-->
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./assets/images/favicon-32x32.png"
+         />
+      <!--=============== CSS  ===============-->
+      <link rel="stylesheet" href="./assets/styles/style.css" />
+      <!--=============== JS  ===============-->
+      <script src="./assets/js/script.js" defer></script>
+      <!--=============== TITLE ===============-->
+      <title>Frontend Mentor | Notifications page</title>
+   </head>
+   <body>
+      <div class="background-img-wrapper">
+         <div class="background-img"></div>
       </div>
-      <div class="posts_container">
-        <!-- Mark Webber -->
-        <div class="post">
-          <img
-            src="assets/images/avatar-mark-webber.webp"
-            alt="Mark Webber profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Mark Webber</span> reacted to your recent post
-              <span>My first tournament today!</span>
-              <span class="dot">dot</span>
+      <div class="container">
+         <div class="header">
+            <p class="notifications">Notifications<span>3</span></p>
+            <p>Mark all as read</p>
+         </div>
+         <div class="posts_container">
+            <!-- Mark Webber -->
+            <div class="post">
+               <img
+                  src="assets/images/avatar-mark-webber.webp"
+                  alt="Mark Webber profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                        <span class="name">Mark Webber</span> reacted to your recent post
+                        <span>My first tournament today!</span>
+                        <span class="dot"></span>
+                     </p>
+                  </div>
+                  <p class="time">1m ago</p>
+               </div>
             </div>
-            <p>1m ago</p>
-          </div>
-        </div>
-        <div class="post">
-          <img
-            src="assets/images/avatar-angela-gray.webp"
-            alt="Angela Gray profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Angela Gray</span> followed you
-              <span class="dot">dot</span>
+            <div class="post">
+               <img
+                  src="assets/images/avatar-angela-gray.webp"
+                  alt="Angela Gray profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                        <span class="name">Angela Gray</span> followed you
+                        <span class="dot"></span>
+                     </p>
+                  </div>
+                  <p class="time">5m ago</p>
+               </div>
             </div>
-            <p>5m ago</p>
-          </div>
-        </div>
-        <!-- Jacob Thompson -->
-        <div class="post">
-          <img
-            src="assets/images/avatar-jacob-thompson.webp"
-            alt="Jacob Thompson profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Jacob Thompson</span> has joined your group
-              <span>Chess Club</span>
-              <span class="dot">dot</span>
+            <!-- Jacob Thompson -->
+            <div class="post">
+               <img
+                  src="assets/images/avatar-jacob-thompson.webp"
+                  alt="Jacob Thompson profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                        <span class="name">Jacob Thompson</span> has joined your group
+                        <span>Chess Club</span>
+                        <span class="dot"></span>
+                     </p>
+                  </div>
+                  <p class="time">1 day ago</p>
+               </div>
             </div>
-            <p>1 day ago</p>
-          </div>
-        </div>
-        <!-- Rizky Hasanuddin -->
-        <div class="post">
-          <img
-            src="assets/images/avatar-rizky-hasanuddin.webp"
-            alt="Rizky Hasanuddin profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Rizky Hasanuddin</span> sent you a private
-              message
-
-              <span class="dot hidden">dot</span>
-              <div class="message_preview">
-                Hello, thanks for setting up the Chess Club. I've been a member
-                for a few weeks now and I'm already having lots of fun and
-                improving my game.
-              </div>
+            <!-- Rizky Hasanuddin -->
+            <div class="post">
+               <img
+                  src="assets/images/avatar-rizky-hasanuddin.webp"
+                  alt="Rizky Hasanuddin profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                        <span class="name">Rizky Hasanuddin</span> sent you a private
+                        message
+                        <span class="dot hidden"></span>
+                     </p>
+                     <div class="message_preview">
+                        Hello, thanks for setting up the Chess Club. I've been a member
+                        for a few weeks now and I'm already having lots of fun and
+                        improving my game.
+                     </div>
+                  </div>
+                  <p class="time">1 day ago</p>
+               </div>
             </div>
-            <p>1 day ago</p>
-          </div>
-        </div>
-        <!-- Kimberly Smith  -->
-        <div class="post">
-          <img
-            src="assets/images/avatar-kimberly-smith.webp"
-            alt="Kimberly Smith profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Kimberly Smith</span> commented on your picture
-
-              <span class="dot hidden">dot</span>
+            <!-- Kimberly Smith  -->
+            <div class="post">
+               <img
+                  src="assets/images/avatar-kimberly-smith.webp"
+                  alt="Kimberly Smith profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                        <span class="name">Kimberly Smith</span> commented on your picture
+                        <span class="dot hidden"></span>
+                     </p>
+                  </div>
+                  <p class="time">1 week ago</p>
+               </div>
+               <img
+                  src="assets/images/image-chess.webp"
+                  alt="Image Chess"
+                  class="post_image_right"
+                  />
             </div>
-            <p>1 week ago</p>
-          </div>
-          <img
-            src="assets/images/image-chess.webp"
-            alt="Image Chess"
-            class="post_image_right"
-          />
-        </div>
-        <!-- Nathan Peterson  -->
-        <div class="post">
-          <img
-            src="assets/images/avatar-nathan-peterson.webp"
-            alt="Nathan Peterson profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Nathan Peterson</span> reacted to your recent
-              post
-              <strong>5 end-game strategies to increase your win rate</strong>
-
-              <span class="dot">dot</span>
+            <!-- Nathan Peterson  -->
+            <div class="post">
+               <img
+                  src="assets/images/avatar-nathan-peterson.webp"
+                  alt="Nathan Peterson profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                     <p><span class="name">Nathan Peterson</span> reacted to your recent
+                        post
+                        <strong>5 end-game strategies to increase your win rate</strong>
+                     </p>
+                     <span class="dot hidden"></span></p>
+                  </div>
+                  <p class="time">2 weeks ago</p>
+               </div>
             </div>
-            <p>2 weeks ago</p>
-          </div>
-        </div>
-        <!-- Anna Kim  -->
-        <div class="post">
-          <img
-            src="assets/images/avatar-anna-kim.webp"
-            alt="Anna Kim profile"
-          />
-          <div class="post_data">
-            <div class="post__message">
-              <span class="name">Anna Kim</span> left the group
-              <span>Chess Club</span>
-              <span class="dot">dot</span>
+            <!-- Anna Kim  -->
+            <div class="post">
+               <img
+                  src="assets/images/avatar-anna-kim.webp"
+                  alt="Anna Kim profile"
+                  />
+               <div class="post_data">
+                  <div class="post__message">
+                     <p>
+                        <span class="name">Anna Kim</span> left the group
+                        <span>Chess Club</span>
+                        <span class="dot hidden"></span>
+                     </p>
+                  </div>
+                  <p class="time">2 weeks ago</p>
+               </div>
             </div>
-            <p>2 weeks ago</p>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
-    </footer>
-  </body>
+      <footer class="attribution">
+         Challenge by
+         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+            >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
+      </footer>
+   </body>
 </html>
