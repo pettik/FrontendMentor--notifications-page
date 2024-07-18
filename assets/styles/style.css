@@ -71,7 +71,7 @@ body {
 	max-width: 375px;
 	margin: 0 auto;
 	padding: 1rem;
-	opacity: 0.6;
+	opacity: 0.4;
 	border: 1px solid red;
 }
 
@@ -109,7 +109,10 @@ h1 {
 }
 
 .posts_container {
-	padding: 1rem;
+	display:flex;
+	flex-direction: column;
+	row-gap: .85rem;
+	
 }
 
 /*=============== POST ===============*/
@@ -117,6 +120,9 @@ h1 {
 	display: flex;
 	align-items: flex-start;
 	column-gap: 0.5rem;
+	border:1px solid red;
+	border-radius: .5rem;
+	padding:.95rem 1rem;
 }
 
 .post img {
