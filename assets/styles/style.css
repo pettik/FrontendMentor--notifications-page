@@ -71,7 +71,7 @@ body {
 	max-width: 375px;
 	margin: 0 auto;
 	padding: 1rem;
-	opacity: 0.4;
+	opacity: 1;
 	border: 1px solid red;
 }
 
@@ -120,9 +120,13 @@ h1 {
 	display: flex;
 	align-items: flex-start;
 	column-gap: 0.5rem;
-	border:1px solid red;
 	border-radius: .5rem;
 	padding:.95rem 1rem;
+}
+
+.news{
+	background-color: var(--very-light-grayish-blue);
+	box-shadow:3px 0 5px rgba(0,0,0,.1)
 }
 
 .post img {
@@ -137,7 +141,7 @@ h1 {
 
 .post__message {
 	font-size: .92rem;
-	color: var(--light-grayish-blue-2);
+	color: var(--dark-grayish-blue);
 }
 
 .post__message span {
@@ -145,11 +149,11 @@ h1 {
 }
 
 .post__message span:not(.name) {
-	color: var(--light-grayish-blue-2);
+	color: var(--primary-blue);
 }
 
 .post__message span.name {
-	color: var(--dark-grayish-blue);
+	color: var(--very-dark-blue);
 }
 
 
@@ -162,12 +166,24 @@ h1 {
 }
 
 .time {
-	font-size: .9rem;
-	color: var(--light-grayish-blue-1);
+	margin-top:.15rem;
+	font-size: .85rem;
+	color: var(--grayish-blue);
+}
+
+.link{
+	color:var(--primary-blue);
 }
 
 .attribution {
 	display: none;
+}
+
+.message_preview{
+	margin-top: 1rem;
+	border:1px solid var(--dark-grayish-blue);
+	border-radius: .25rem;
+	padding:1rem;
 }
 
 /*=============== MEDIA QUERIES ===============*/
