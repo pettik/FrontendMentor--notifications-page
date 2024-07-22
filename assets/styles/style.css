@@ -193,15 +193,15 @@ h1 {
   display: none;
 }
 
-.message_preview {
+.message__preview {
   margin-top: 1rem;
-  border: 1px solid var(--light-grayish-blue-1);
+  border: 1px solid var(--light-grayish-blue-2);
   border-radius: 0.25rem;
   padding: 1rem;
   transition: background-color .2s ease-in;
 }
 
-.message_preview:hover{
+.message__preview:hover{
   background-color: var(--light-grayish-blue-2);
   border: 1px solid transparent;
 
