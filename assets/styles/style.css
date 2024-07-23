@@ -198,13 +198,13 @@ h1 {
   border: 1px solid var(--light-grayish-blue-2);
   border-radius: 0.25rem;
   padding: 1rem;
-  transition: background-color .2s ease-in;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
 }
 
-.message__preview:hover{
+.message__preview:hover {
   background-color: var(--light-grayish-blue-2);
   border: 1px solid transparent;
-
 }
 
 /*=============== MEDIA QUERIES ===============*/
@@ -212,7 +212,7 @@ h1 {
   .background-img-wrapper {
     /* display: none; */
     position: absolute;
-    top: -8rem;
+    top: -3.5rem;
     left: 50%;
     transform: translateX(-50%);
     width: 731px;
@@ -230,9 +230,10 @@ h1 {
   }
 
   .container {
-    margin-top: 8rem;
-    max-width: 736px;
+    margin-top: 3.5rem;
+    max-width: 720px;
     padding: 2.5rem;
     border-radius: 1rem;
+    opacity: 0.5;
   }
 }
