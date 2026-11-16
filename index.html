@@ -1,167 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- displays site properly based on user's device -->
-      <!--=============== FAVICON ===============-->
-      <link
-         rel="icon"
-         type="image/png"
-         sizes="32x32"
-         href="./assets/images/favicon-32x32.png"
-         />
-      <!--=============== CSS  ===============-->
-      <link rel="stylesheet" href="./assets/styles/style.css" />
-      <!--=============== JS  ===============-->
-      <script src="./assets/js/script.js" defer></script>
-      <!--=============== TITLE ===============-->
-      <title>Frontend Mentor | Notifications page</title>
-   </head>
-   <body>
-      <div class="hidden background-img-wrapper">
-         <div class="background-img"></div>
-      </div>
-      <div class="container">
-         <div class="header">
-            <p class="notifications">Notifications<span>3</span></p>
-            <p>Mark all as read</p>
-         </div>
-         <div class="posts_container">
-            <!-- Mark Webber -->
-            <div class="post news">
-               <img
-                  src="assets/images/avatar-mark-webber.webp"
-                  alt="Mark Webber profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p>
-                        <span class="name">Mark Webber</span> reacted to your recent post
-                        <span>My first tournament today!</span>
-                        <span class="dot"></span>
-                     </p>
-                  </div>
-                  <p class="time">1m ago</p>
-               </div>
-            </div>
-            <!-- Angela Gray -->
-            <div class="post news">
-               <img
-                  src="assets/images/avatar-angela-gray.webp"
-                  alt="Angela Gray profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p>
-                        <span class="name">Angela Gray</span> followed you
-                        <span class="dot"></span>
-                     </p>
-                  </div>
-                  <p class="time">5m ago</p>
-               </div>
-            </div>
-            <!-- Jacob Thompson -->
-            <div class="post news">
-               <img
-                  src="assets/images/avatar-jacob-thompson.webp"
-                  alt="Jacob Thompson profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p>
-                        <span class="name">Jacob Thompson</span> has joined your group
-                        <span class="link">Chess Club</span>
-                        <span class="dot"></span>
-                     </p>
-                  </div>
-                  <p class="time">1 day ago</p>
-               </div>
-            </div>
-            <!-- Rizky Hasanuddin -->
-            <div class="post">
-               <img
-                  src="assets/images/avatar-rizky-hasanuddin.webp"
-                  alt="Rizky Hasanuddin profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p>
-                        <span class="name">Rizky Hasanuddin</span> sent you a private
-                        message
-                        <span class="dot hidden"></span>
-                     <p class="time">5 days ago</p>
-                     </p>
-                     <div class="message__preview">
-                        Hello, thanks for setting up the Chess Club. I've been a member
-                        for a few weeks now and I'm already having lots of fun and
-                        improving my game.
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- Kimberly Smith  -->
-            <div class="post">
-               <img
-                  src="assets/images/avatar-kimberly-smith.webp"
-                  alt="Kimberly Smith profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p>
-                        <span class="name">Kimberly Smith</span> commented on your picture
-                        <span class="dot hidden"></span>
-                     </p>
-                  </div>
-                  <p class="time">1 week ago</p>
-               </div>
-               <img
-                  src="assets/images/image-chess.webp"
-                  alt="Image Chess"
-                  class="post_image_right"
-                  />
-            </div>
-            <!-- Nathan Peterson  -->
-            <div class="post">
-               <img
-                  src="assets/images/avatar-nathan-peterson.webp"
-                  alt="Nathan Peterson profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p><span class="name">Nathan Peterson</span> reacted to your recent
-                        post
-                        <span>5 end-game strategies to increase your win rate</span>
-                        <span class="dot hidden"></span>
-                     </p>
-                  </div>
-                  <p class="time">2 weeks ago</p>
-               </div>
-            </div>
-            <!-- Anna Kim  -->
-            <div class="post">
-               <img
-                  src="assets/images/avatar-anna-kim.webp"
-                  alt="Anna Kim profile"
-                  />
-               <div class="post_data">
-                  <div class="post__message">
-                     <p>
-                        <span class="name">Anna Kim</span> left the group
-                        <span class="link">Chess Club</span>
-                        <span class="dot hidden"></span>
-                     </p>
-                  </div>
-                  <p class="time">2 weeks ago</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <footer class="attribution">
-         Challenge by
-         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-            >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
-      </footer>
-   </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive notifications page with accessible read and unread states."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main class="container" aria-labelledby="notifications-heading">
+      <header class="header">
+        <h1 class="notifications" id="notifications-heading">
+          Notifications
+          <span class="notification-count">
+            <span id="unread-count">3</span>
+            <span class="sr-only">unread notifications</span>
+          </span>
+        </h1>
+        <button id="mark-all" type="button" aria-controls="notification-list">
+          Mark all as read
+        </button>
+      </header>
+      <p class="sr-only" id="notification-status" role="status" aria-atomic="true"></p>
+
+      <ul class="posts" id="notification-list" role="list">
+        <li class="post is-unread">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="Mark Webber profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Mark Webber</strong> reacted to your recent post
+              <strong class="post__subject">My first tournament today!</strong>
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">1m ago</p>
+          </div>
+        </li>
+
+        <li class="post is-unread">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="Angela Gray profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Angela Gray</strong> followed you
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">5m ago</p>
+          </div>
+        </li>
+
+        <li class="post is-unread">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="Jacob Thompson profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Jacob Thompson</strong> has joined your group
+              <strong class="post__group">Chess Club</strong>
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">1 day ago</p>
+          </div>
+        </li>
+
+        <li class="post">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="Rizky Hasanuddin profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Rizky Hasanuddin</strong> sent you a private message
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">5 days ago</p>
+            <p class="message__preview">
+              Hello, thanks for setting up the Chess Club. I've been a member for a
+              few weeks now and I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </li>
+
+        <li class="post">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="Kimberly Smith profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Kimberly Smith</strong> commented on your picture
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">1 week ago</p>
+          </div>
+          <img
+            class="post__image"
+            src="./assets/images/image-chess.webp"
+            alt="People playing chess"
+            width="100"
+            height="100"
+          />
+        </li>
+
+        <li class="post">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="Nathan Peterson profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Nathan Peterson</strong> reacted to your recent post
+              <strong class="post__subject">5 end-game strategies to increase your win rate</strong>
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">2 weeks ago</p>
+          </div>
+        </li>
+
+        <li class="post">
+          <img
+            class="post__avatar"
+            src="./assets/images/avatar-anna-kim.webp"
+            alt="Anna Kim profile"
+            width="90"
+            height="90"
+          />
+          <div class="post__data">
+            <p class="post__message">
+              <span class="unread-label sr-only">Unread. </span>
+              <strong class="post__name">Anna Kim</strong> left the group
+              <strong class="post__group">Chess Club</strong>
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <p class="post__time">2 weeks ago</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
+    </footer>
+  </body>
 </html>

@@ -1,45 +1,26 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Inicializace
-    updateNotificationCount();
+const posts = document.querySelectorAll('#notification-list .post');
+const markAllButton = document.querySelector('#mark-all');
+const unreadCount = document.querySelector('#unread-count');
+const notificationStatus = document.querySelector('#notification-status');
 
-    // Přidání klikacího události na "Mark all as read/unread"
-    const markAllButton = document.querySelector('.header p:last-child');
-    markAllButton.addEventListener('click', function() {
-        if (markAllButton.textContent === 'Mark all as read') {
-            markAllAsRead();
-        } else {
-            markAllAsUnread();
-        }
-    });
+function updateNotificationSummary() {
+  const count = Array.from(posts).filter(post => post.classList.contains('is-unread')).length;
+
+  unreadCount.textContent = count;
+  markAllButton.textContent = count > 0 ? 'Mark all as read' : 'Mark all as unread';
+
+  return count;
+}
+
+markAllButton.addEventListener('click', () => {
+  const markAsUnread = !Array.from(posts).some(post => post.classList.contains('is-unread'));
+
+  posts.forEach(post => post.classList.toggle('is-unread', markAsUnread));
+
+  const count = updateNotificationSummary();
+  notificationStatus.textContent = markAsUnread
+    ? `All notifications marked as unread. ${count} unread notifications.`
+    : 'All notifications marked as read. 0 unread notifications.';
 });
 
-function updateNotificationCount() {
-    const notificationCount = document.querySelectorAll('.post.news').length;
-    document.querySelector('.notifications span').textContent = notificationCount;
-}
-
-function markAllAsRead() {
-    document.querySelectorAll('.post.news').forEach(post => {
-        post.classList.remove('news');
-        const dot = post.querySelector('.dot');
-        if (dot) {
-            dot.classList.add('hidden');
-        }
-    });
-    updateNotificationCount();
-    const markAllButton = document.querySelector('.header p:last-child');
-    markAllButton.textContent = 'Mark all as unread';
-}
-
-function markAllAsUnread() {
-    document.querySelectorAll('.post').forEach(post => {
-        post.classList.add('news');
-        const dot = post.querySelector('.dot');
-        if (dot) {
-            dot.classList.remove('hidden');
-        }
-    });
-    updateNotificationCount();
-    const markAllButton = document.querySelector('.header p:last-child');
-    markAllButton.textContent = 'Mark all as read';
-}
+updateNotificationSummary();
